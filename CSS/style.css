@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: 40px 50px 0 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */         
+.PageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PageHeader__logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+/* NAVIGATION BAR */
+.PageHeader__nav-option {
+    padding: 40px 25px;
+    border-top: 3px solid transparent;
+    padding-top: 38px;
+}
+
+.PageHeader__nav-option:hover {
+    color:#0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 38px;
+}
+
+/*MAIN*/
+.MainTitle {
+    font-size: 22px;
+    margin: 60px 0 0 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 8px 0 21px 0; 
+}
+
+h2 {
+    font-size: 22px;
+}
+
+/*SEARCH-FORM*/
+.SearchForm {
+    display: flex;
+    align-items: center;
+}
+
+.SearchForm i {
+    padding: 15px 18px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    font-size: 18px;
+}
+
+.SearchForm__input {
+    padding: 15px 65px 15px 15px; 
+    border: 1px solid #f2f2f2;
+}
+
+.SearchForm__input::placeholder {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.SearchForm__button { 
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 0 15px 15px 0;
+    padding: 13px 15px 13px 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.SearchForm__button:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* FILTERS SECTION */
+.FiltersList {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 25px 5px 10px 5px;
+    flex-wrap: wrap;
+}
+
+.FiltersList__header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.FiltersList__filter {
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.FiltersList__filter:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.FiltersList i {
+    color: #0065FC;
+}
+
+.FiltersList__name {
+    font-weight: bold;
+}
+
+/* INFO POINT */
+.InfoPoint {
+    display: flex;
+    align-items: center; 
+}
+
+.InfoPoint i {
+    border: 1.5px solid #d9d9d9;
+    border-radius: 20px;
+    margin: 8px 10px  21px 0;
+    padding: 5px 9px 5px 9px;
+    font-size: 12px;
+    color: #0065FC;
+}
+
+/* CARD SESSION APARTMENTS*/
+.Accommodation {
+    display: flex;
+    gap: 30px;
+}
+
+.Accommodation > div {
+    border: 1px solid none;
+    background-color: #f2f2f2;
+    padding: 20px 30px 35px 30px ;
+    border-radius: 16px;
+}
+
+.Accommodation__section {
+    flex-basis: 60%;
+}
+
+.Accommodation__displayMore {
+    font-weight: bold;
+}
+
+.Accommodation__displayMore:hover {
+    color: #0065FC;
+}
+
+/*inside card-Marseille*/
+.Accommodation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+/*Marseille cards*/
+.Accommodation__card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 5px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+
+.Accommodation__card-image {
+    border-radius: 16px 16px 0 0;
+    height: 115px;
+    object-fit: cover;
+    width: 100%; 
+}
+
+.Accommodation__card-info {
+
+    padding-left: 10px;
+}
+
+.Accommodation__card-name {
+    font-size: 15px;
+    padding: 0; 
+    margin: 3px 0 ; 
+}
+
+.Accommodation__card-price {
+    font-size: 13px;
+    padding: 0; 
+    margin: 0 0 5px 0; 
+}
+
+.Accommodation__card-stars i {
+    font-size: 13px;
+    margin-right: -2px;
+}
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color:#d9d9d9
+}
+
+.Accommodation__card:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+/*popular cards*/   
+.Popular {
+    flex-basis: 40%;
+}
+
+.Popular__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Popular__header i {
+    color: #0065FC;
+}
+
+.Popular__list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.Popular__card {
+    background-color: white;
+    border: 1px solid none;
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    height: 150px;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.Popular__card-image {
+    height: 140px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+    padding: 5px;
+}
+
+.Popular__card-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+}
+
+.Popular__card-name {
+    margin-bottom: 0;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.Popular__card-price {
+    padding-top: 5px;
+    margin-bottom: auto;
+    font-size: 13px;
+}
+
+.Popular__card-stars {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.Popular__card:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+/* CARD ACTIVITIES */
+.Activities__header {
+    margin-top: 70px;
+
+}
+
+.Activities__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.Activities__card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 16px #0000002e;
+    flex-basis: 25%;
+}
+
+.Activities__card-image {
+    border-radius: 16px 16px 0 0;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Activities__card-name {
+    padding-left: 15px;
+    font-weight: bold;
+    padding: 15px; 
+}
+
+.Activities__card:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/*FOOTER SECTION*/
+.Footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.Footer__section {
+    flex-basis: 30%;
+    margin: 20px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer__section p {
+    padding: 6px 0;
+}
+
+.Footer__section-link {
+    padding-bottom: 5px;
+}
+
+.Footer__section-link:hover {
+    color:#0065FC;
+}
+
+
